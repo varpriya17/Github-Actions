@@ -1,0 +1,26 @@
+#workflow
+#should have name 
+name: hello
+
+
+# on tells that when the workflow run
+# Workflow-dispatch is for manually run the workflow
+on: 
+  workflow_dispatch: 
+
+#jobs tells that what the workflows should do, there can be more than one jobs 
+#should be inside the workflow
+jobs:
+  say-hello:
+  #creates a Ephermal contanier with ubuntu running
+    runs-on: ubuntu-latest
+
+#steps 
+#should be inside the jobs 
+    steps:
+       - name: Say hello to everyone background
+         run: echo "Hello Dosto"
+      
+#actions 
+#should be inside the steps 
+
